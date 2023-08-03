@@ -1,0 +1,218 @@
+body{
+    background: linear-gradient(to bottom right, #7EADB3, #b9c1eb, #3B3758);
+    display: fit-content;
+    justify-content: center; /* Para centralizar o conteúdo horizontalmente */
+    align-items: center;
+}
+
+.card {
+    z-index: 2;
+    height: 70%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eaedf3;
+    border-radius: 25px;
+    box-shadow: 0 0 1.2vw 0 #000000;
+    border-bottom: 2vw;
+    position: relative;
+}
+
+.container {
+  padding: 20px; /* Adiciona um espaçamento interno de 20 pixels */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('../Escolinha/Escolinha/assets/imge/EJPmenor.png'); /* Substitua pelo caminho da sua logo */
+    background-size: cover;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+  }
+
+h2 {
+    text-align: center;
+    color: #47565f;
+    margin: 0;
+    font-size: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-color: #5f5c5c;
+}
+
+.escrita {
+    color: #47565f;
+    font-size: 1.5vw;
+    justify-content: space-around;
+    margin-left: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus, 
+textarea:focus{
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 10px #4D8581; /* Adiciona o glow azul */
+}
+
+.entrada {
+    border-radius: 8px;
+    height: 3vw;
+    width: 90%;
+    box-shadow: 0;
+    justify-content: space-between;
+    margin-left: 5%;
+    border: 0;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cancel-button, .submit-button{
+    border-radius: 20px;
+    width: 8vw;
+    height: 3vw;
+    border: 0;
+    cursor: pointer;
+    color: whitesmoke;
+    flex-basis: 45%;
+    font-size: 1.2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.cancel-button{
+    background-color: rgb(145, 34, 34);
+}
+
+.cancel-button::after{
+    background-color: #ff1900;
+    color: #ffdbbe;
+}
+
+.cancel-button:hover{
+    background-color: #BE4039 ;
+    color: #eef5f0;
+}
+
+.submit-button{
+    background-color: rgb(43, 150, 43);
+}
+
+.submit-button::after{
+    background-color: #34b645;
+    color: #17e64b;
+}
+
+.submit-button:hover{
+    background-color: rgb(61, 206, 61);
+    color: #eef5f0;
+}
+
+section{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label_outras {
+    margin-left: 5%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    /*alterações de estilo para dispositivos móveis */
+    .card {
+        height: auto;
+        width: 90%;
+    }
+    .escrita, .entrada, .label_outras {
+        width: 90%;
+    }
+}
+
+.label_outras{
+    border: 1px solid #000000;
+    border-radius: 8px;
+    height: 3vw;
+    width: 10vw;
+    background-color: rgba(77, 133, 129, 0.5);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 90%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilização do botão de upload */
+.file-upload {
+    background-color: #4D8581;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 20vw;
+    margin-left: 5%;
+    font-size: 90%;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+  }
+
+.file-upload:hover {
+    background-color: #2B5F5C;
+}
+  
+  .file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); /* Para suporte ao IE8 e versões anteriores */
+  }
+
+  .upload-button {
+    /* Estilos específicos para o botão de upload */
+    background-color: #4D8581;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 20vw;
+    cursor: pointer;
+  }
+  
+  /* Estilização do botão quando hover (opcional) */
+  .upload-button:hover {
+    background-color: #2B5F5C;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4D8581;
+    border-radius: 50%;
+    margin-left: 5%;
+    box-shadow: #5f5c5c;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked {
+    background-color: #4D8581; /* ou qualquer outra cor de sua preferência */
+  }
+
+  .label_dot{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+  }

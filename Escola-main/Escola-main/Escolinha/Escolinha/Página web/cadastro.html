@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Jogadores</title>
+    <link rel="shortcut icon" type="image/png" href="Escola-main\Escola-main\Escolinha\Escolinha\assets\imge\EJPmenor.png">
+    <link rel="stylesheet" type="text/css" href="\..\Escola-main\Escola-main\Escolinha\Escolinha\Estilização\cadastro.css" media="screen" />
+    <link rel="icon" href="Escola-main\Escola-main\Escolinha\Escolinha\assets\imge\EJPmenor.png">
+    <link rel=”styleSheet” href=cadastro.css” media=”ALL and (color)” />
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <form action="config/cadastrar_jogador.php" method="post" enctype="multipart/form-data">
+            <header>
+                <br>
+                <img class="logo" src="\..\Escola-main\foto\EJPmenor.png">
+                <h2>Cadastro de Jogadores</h2>
+            </header>
+
+            <label class="escrita">Nome Completo:</label><br>
+            <input type="text" name="nome" class="entrada" required><br><br>
+            <label class="escrita">Apelido:</label><br>
+            <input type="text" name="apelido" class="entrada" required><br><br>
+            <label class="escrita">Email:</label><br>
+            <input type="email" name="email" class="entrada" required><br><br>
+            <label class="escrita">Data de Nascimento:</label><br>
+            <input type="date" name="nascimento" class="label_outras" required><br><br>
+            <label class="escrita">RG ou RA:</label><br>
+            <input type="text" name="rg" class="entrada" required><br><br>
+            <label class="escrita">CPF:</label><br>
+            <input type="text" name="cpf" class="entrada" required><br><br>
+            
+            <label class="escrita">Sexo:</label><br>
+            <input type="radio" name="sexo" value="M" required>
+            <label for="genMasc" class="label_dot">Masculino</label>
+            <input type="radio" name="sexo" value="F" required>
+            <label for="genFem" class="label_dot">Feminino</label>
+            <br>
+
+            <br>
+
+            <label class="escrita">Nome do Pai:</label><br>
+            <input type="text" name="nome_pai" class="entrada" required><br><br>
+            <label class="escrita">Nome da Mãe:</label><br>
+            <input type="text" name="nome_mae" class="entrada" required><br><br>
+            <label class="escrita">Endereço:</label><br>
+            <input type="text" name="endereco" class="entrada" required><br><br>
+            <label class="escrita">Cidade:</label><br>
+            <input type="text" name="cidade" class="entrada" required><br><br>
+            <label class="escrita" name="CaixaDeSelecao">Estado:</label><br>
+            <select name="estado" class="label_outras" required>
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            <br><br>
+
+            <label class="escrita">Bairro:</label>
+            <br>
+            <input type="text" name="bairro" class="entrada" required>
+            <br><br>
+            <label class="escrita">Telefone Celular:</label>
+            <br>
+            <input type="text" name="telefone" class="entrada" required>
+            <br><br>
+            <label class="escrita">Orientação Médica:</label>
+            <br>
+            <textarea name="orientacao" class="entrada"></textarea>
+            <br><br>
+
+            <!-- Para os radio buttons "Manhã" e "Tarde" -->
+            <label class="escrita">Período de Treino:</label>
+            <br>            
+            <input type="radio" name="periodo" value="Manhã" id="radioManha" required>
+            <label for="radioManha" class="label_dot">Manhã</label>
+
+            <input type="radio" name="periodo" value="Tarde" id="radioTarde" required>
+            <label for="radioTarde" class="label_dot">Tarde</label>
+            <br><br>
+
+            <!-- Para o grupo "Sócio do Clube" -->
+            <label for="socio" class="escrita">Sócio do Clube:</label>
+            <br>
+            <input type="radio" name="socio" value="sim" id="radioSimSocio" required>
+            <label for="radioSimSocio" class="label_dot">Sim</label>
+
+            <input type="radio" name="socio" value="nao" id="radioNaoSocio">
+            <label for="radioNaoSocio" class="label_dot">Não</label>
+            <br><br>
+
+            <!-- Para o grupo "Já foi pago a mensalidade?" -->
+            <label for="status" class="escrita">Já foi pago a mensalidade?</label>
+            <br>
+            <input type="radio" name="status" value="sim" id="radioSimStatus" required>
+            <label for="radioSimStatus" class="label_dot">Sim</label>
+
+            <input type="radio" name="status" value="nao" id="radioNaoStatus">
+            <label for="radioNaoStatus" class="label_dot">Não</label>
+            <br><br>
+
+            <!-- Para o grupo "O jogador esta em atividade?" -->
+            <label for="atv" class="escrita">O jogador está em atividade?</label>
+            <br>
+            <input type="radio" name="atv" value="sim" id="radioSimAtv" required>
+            <label for="radioSimAtv" class="label_dot">Sim</label>
+
+            <input type="radio" name="atv" value="nao" id="radioNaoAtv">
+            <label for="radioNaoAtv" class="label_dot">Não</label>
+            <br><br>
+
+            <label class="escrita">Foto:</label>
+            
+            <br><br>
+
+            <label class="file-upload">
+                <input type="file" name="foto" class="file-input">
+                <span class="upload-button">Escolher arquivo</span>
+              </label>              
+            
+            <br><br><br>
+
+            <section>
+                <input type="button" value="Cancelar" class="button cancel-button">
+                <input type="submit" value="Cadastrar" class="button submit-button">
+            </section>
+
+            <br><br>
+        </form>
+    </div>
+</div>
+    <script src="\..\Escola-main\Escola-main\Escolinha\Escolinha\assets\bloq.js"></script>
+</body>
+</html>
