@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+/* Define a fonte utilizada na página */
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Define o estilo do título principal */
+h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* Define o estilo da tabela */
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+/* Define o estilo da primeira linha da tabela (os cabeçalhos das colunas) */
+table tr:first-child {
+	background-color: #333;
+	color: #fff;
+	text-align: left;
+}
+
+/* Define o estilo das células da tabela */
+table td, table th {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+/* Define o estilo dos links para editar as mensalidades */
+table a {
+	color: #fff;
+	background-color:grey;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+}

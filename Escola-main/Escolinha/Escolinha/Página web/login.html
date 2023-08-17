@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-BR">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acesso | Escolinha</title>
+        <link rel="stylesheet" type="text/css" href="\..\Escola-main\Escola-main\Escolinha\Escolinha\Estilização\login.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+        <script src="login.js"></script>
+    </head>
+    <body>
+            <div id="login" class="container-fluid">
+                <div class="card" id="card">
+                <form class="card">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <img src="Persona.png" alt="Imagem de perfil" id="ImgPerfil">
+                            <h2>Entrar na conta</h2> 
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-area">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" id="usuario" autocomplete="off" placeholder="usuário" required autofocus>
+                        </div>
+                        <div class="card-content-area">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" autocomplete="off" placeholder="senha" min="8" required autofocus aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input type="submit" value="LogIn" class="submit" aria-label="Fazer login" id="IrParaMenu">
+                        <input type="submit" value="SignIn" class="submit" aria-label="Cadastrar-se" id="IrParaCadastro">
+                        <br>
+                        <a href="#" class="recuperar_senha" id="IrParaRecSenha">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

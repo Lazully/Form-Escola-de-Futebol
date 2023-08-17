@@ -1,0 +1,105 @@
+body{
+    background: linear-gradient(to bottom right, #7EADB3, #b9c1eb, #3B3758);
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 15px;
+  }
+  
+  h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  #login {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #login {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+  
+  #card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(126,173,179, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 600px;
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  opacity: 0.8;
+  }
+  
+  #ImgPerfil{
+  border-radius: 200px;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #3B3758;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  }
+  
+  .submit {
+  background-color: #3B3758;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  font-weight: bold;
+  }
+  
+  .submit:hover {
+  background-color: #3B3758;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #7EADB3;
+  }
